@@ -1,4 +1,5 @@
 <head><title>正南</title></head>
+<body>
 <table border="1px">
   <tr>
     <th>姓名</th>
@@ -28,4 +29,5 @@
     <td>物理</td>
     <td>物理</td>
     </tr>
-</table>
+</table> 
+</body>
