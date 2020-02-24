@@ -1,0 +1,31 @@
+<head><title>正南</title></head>
+<table border="1px">
+  <tr>
+    <th>姓名</th>
+    <th>性别</th>
+    </tr>
+  <tr>
+    <td>展宁</td>
+    <td>男</td>
+    </tr>
+</table>
+
+<br>
+<table border="1px">
+  <tr>
+    <th rowspan="2">物理</th>
+    <th>物理</th>
+    <th>物理</th>
+    <th>物理</th>
+    </tr>
+  <tr>
+    <td colspan="2">物理</td>
+    <td>物理</td>
+    </tr>
+  <tr>
+    <td>物理</td>
+    <td>物理</td>
+    <td>物理</td>
+    <td>物理</td>
+    </tr>
+</table>
