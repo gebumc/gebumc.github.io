@@ -1,0 +1,438 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+
+         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" bdsfid="2">
+         <meta name="keywords" content="英烈网,烈士,烈属,祭奠,英雄事迹" />
+        <meta name="description" content="中华英烈网以缅怀烈士英名，弘扬烈士精神为主题，以服务社会公众特别是广大烈属为宗旨" />
+        <title>中华英烈网</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css" bdsfid="5">
+        <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/common/DayTime01.js"></script>
+		<script type="text/javascript" src="js/swfobject.js"></script>
+		<script type="text/javascript" src="js/tuisong.js"></script>
+		<script>
+	window.onload=function(){
+	 $('.close').click(function(){
+	 	$('.suspension').css('display','none')
+	 })
+	}
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?681152225701a8694dbc7a76027f4359";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+    </head>
+
+    <body bdsfid="10" style="-webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+-ms-filter: grayscale(100%);
+-o-filter: grayscale(100%);
+filter: grayscale(100%);
+filter: gray">
+        <style bdsfid="11">
+.data-img {
+    cursor: pointer
+}
+.suspension{
+   height: 200px;
+   width: 300px;
+   position: fixed;
+   right: 10px;
+   bottom: 20px;
+   background-color: #ddd; 
+   border-radius: 10px;
+}
+.suspension>.suspension1{
+	width: 99%;
+    height: 20%;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #0064CD;
+    line-height: 36px;
+    font-size: 17px;
+    color: white;
+    padding-left: 3px;
+    display: flex;
+    justify-content: space-between;
+	
+}
+.suspension>.suspension2{
+	width: 93%;
+    height: 70%;
+	overflow: hidden;
+	padding: 10px;
+}
+.pic_looper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,.5);
+    display: none;
+    z-index:1;
+}
+
+.pic_show {
+    width: 100%;
+    max-width: 980px;
+    height: 520px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    margin: 0 auto;
+    text-align: center;
+    display: none;
+}
+
+.pic_box {
+    width: 100%;
+    /*height: 450px;*/
+    /*margin: 40px auto;*/
+    text-align: center;
+    overflow: hidden;
+}
+
+.mask_pic{
+    width: 100%;    
+    height: 100%;
+    opacity: .7;
+}
+
+.pic_box img {
+    height: 100%;
+}
+
+.pic_close {
+    position: absolute;
+    right:0;
+    z-index:1
+}
+
+.pic_close span {    
+    display: block;
+    width: 28px;
+    /* margin-left: 38px; */
+    /* padding: 0; */
+    /* margin: 0; */
+    height: 28px;
+    float: right;
+    margin: 15px 15px;
+    text-align: center;
+    line-height: 21px;
+    cursor: pointer;
+    color: #f42122;
+    font-size: 26px;
+    background: #fff;
+    border-radius: 50%;
+}
+.New-right-mian>.imglink{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-image:url(wangshangjnian.png) ;
+	background-repeat: no-repeat;
+	background-size: 100%;
+} 
+
+</style>
+
+        <div class="area" bdsfid="12">
+            <div bdsfid="13">
+            	<!--Common/top.html-->
+                <iframe src="Common/top.html" frameborder="0" scrolling="no" width="100%" height="211px" bdsfid="14"></iframe>
+            </div>
+        </div>
+
+	
+<div class="area">
+			<style type="text/css">
+			#ad-banner {height:450px;width:980px;margin:0 auto;position:relative;z-index:0;}
+			#ad-banner a.close {position:absolute;top:10px;right:10px;z-index:1;background:url(./img/close.gif);width:48px;height:15px;display:inline-block;}
+			</style>
+			
+			<script type="text/javascript">
+			$(document).ready(function(){
+			  $("#ad-banner").css("display","none").slideDown(1000);
+			  
+			  $("#ad-banner a.close").click(function(){
+			  $("#ad-banner").slideUp(1000);
+			  });
+			});
+			</script>    
+			<div id="ad-banner"><a target="_blank" href="http://www.chinamartyrs.gov.cn/2020qm/"><img style="width:980px" src="./img/2020qm.jpeg"></a><a href="#" class="close" title="关闭"></a></div>
+		</div>
+
+
+
+	<script type="text/javascript">
+			$(function(){
+        // 图片上下翻滚
+        var len = $('.slidebtn>ul>li').length;
+        var index = 0;
+        var autoplay;
+        $('.slidebtn li').mouseover(function(){
+            index = $('.slidebtn li').index(this);
+            showImg(index);
+        }).eq(len).mouseover();
+
+        $('.slidebox').hover(function(){
+            clearInterval(autoplay);
+        },function(){
+            autoplay = setInterval(function(){
+                showImg(index);
+                index++;
+                if(index>len-1){
+                    index=0;
+                }
+            },3000);
+        }).trigger('mouseleave');
+
+        function showImg(index){
+            var picheight = $('.slidebox').height();
+            $('.slidepic').stop(true,false).animate({top:0-picheight*index},600);
+            $('.slidebtn li').removeClass('focus').eq(index).addClass('focus');
+        };
+
+    });
+			</script>
+
+<!--        
+        <div class="area">
+            <div class="path">
+            </div>
+        </div>
+-->         
+   
+
+ 
+        <div class="area" bdsfid="15">
+            <div class="New" bdsfid="16">
+                <div class="New-left" bdsfid="17">
+                    <iframe src="http://news.chinamartyrs.gov.cn/syxw/syxw.html"frameborder="0" scrolling="no" width="100%" height="100%" bdsfid="18"></iframe>
+                </div>
+                <div class="New-right" bdsfid="19">
+                    <!-- <div class="time"></div> -->
+                   <div class="New-right-mian" bdsfid="20">
+                    <!-- 	<a class="imglink" href="JiDianXianLie/list2.html" target="_blank" class="jdxl" bdsfid="21"> -->
+                        </a>
+    <!-- 首页右边活动三个图片 -->    
+                       <!--  <a id="jdxlHref" href="JiDianXianLie/list8.html">
+                            <img src="img/lsyml.png" />  -->
+                        <a id="jdxlHref" href="JiDianXianLie/list10.html" target="_blank" class="jdxl" bdsfid="21">
+                        <span bdsfid="22">
+                            <b bdsfid="23">十月</b>
+                            <em id="date" style="font-size:30px;line-height:30px;font-weight: bold;" bdsfid="24">14</em>
+                            <em id="day" style="color:#fff; line-height:18px;" bdsfid="25"> 星期天</em>
+                            </span>
+                        </a>
+                        <a href="http://www.chinamartyrs.gov.cn/2020qm/templets/1/default/lieshilingyuan/index.html" target="_blank" class="bn" bdsfid="26">
+                        <span style="width:240px; float:left;height:28px;border:1px solid #ddd;background:#fafafa;text-align:center;line-height:28px;" bdsfid="27">
+                        <b bdsfid="28">全国陵园地图</b>
+                        </span>
+                        <img src="img/lydt.png" bdsfid="29">
+						<!--  <img src="img/wyqq.png" />-->
+                            <!-- <img src="img/img007_07.png"/> -->
+                        </a>
+                        <!--<a href="KangRiYingLie/list.html" target="_blank" class="bn">
+                            <img src="img/wsjd-x.png"
+                                style="margin-top:9px; margin-bottom:9px;" />
+                         <img src="img/kryl.jpg">
+                        </a>
+                    --></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="area" bdsfid="30">
+            <!--<div style="width:980px;height:63px;margin-bottom:10px;">
+                <div id="flashcontent">
+                </div>
+                
+            </div> -->
+            
+    <!-- 首页三个通栏图片切换 -->
+    
+    <style type="text/css" bdsfid="31">
+    .slidebox {height:125px;width:980px;overflow:hidden;margin:10px auto;position:relative;}
+    .slidepic{height:125px;position:absolute;width:980px;padding:0;margin:0;}
+    .slidepic li {height:125px;list-style:none;width:980px;overflow:hidden;}
+    .slidepic li a {display:inline-block;}
+    .slidebtn {width:10px;position:absolute;right:10px;top:22px;}
+    .slidebtn ul {width:10px;height:75px;overflow:hidden;padding:0;margin:0;}
+    .slidebtn ul li {background:url(img/slidebtn.gif) no-repeat 0 0;cursor:pointer;font-size:0;width:8px;height:8px;line-height:0;margin:10px 0px;}
+    .slidebtn ul li.focus {background:url(img/slidebtn.gif) no-repeat 0 -12px;}
+    </style>
+    
+    
+       
+    <div class="slidebox" bdsfid="33">
+             <ul class="slidepic" bdsfid="34" style="top: 0px;">
+			 
+
+			 
+			  <!--战疫英烈录-->
+                 <li bdsfid="41">
+                 <a target="_blank" index="8" href="http://news.chinamartyrs.gov.cn/syxw/202004/t20200403_38991.html" bdsfid="42">
+                 <img src="img/zhanyiyinglielu.jpg" bdsfid="43">
+                 </a>
+                 </li> 
+				 
+				 <!--清明祭英烈
+                 <li bdsfid="35">
+<!--                 <a target="_blank" id="jdxlHref1" index="11" href="JiDianXianLie/list8.html">
+                 <a target="_blank" index="11" href="http://www.chinamartyrs.gov.cn/2020qm/" bdsfid="36">
+                 <img src="img/2020qm.jpg" bdsfid="37">
+                 </a>
+                 </li> --> 
+				 
+				  <!--四川英烈纪念堂
+                 <li bdsfid="44">
+                 <a target="_blank" index="9" href="http://114.116.232.114:8888/index.html" bdsfid="45">
+                 <img src="img/scyljnt.png" bdsfid="46">
+                 </a>
+                 </li>-->
+			  	
+				 <!-- 140个全国文明优抚单位
+                  <li bdsfid="38">
+                 <a target="_blank" index="10" href="http://mzzt.mca.gov.cn/article/qgwmyfsydw/" bdsfid="39">
+                 <img src="img/banner6.jpg" bdsfid="40">
+                 </a>
+                 </li> -->
+				 <!-- 抗日英雄谱 
+                 <li bdsfid="41">
+                  <a target="_blank" index="8" href="GuoJiaJiKangZhan/list.html"> 
+                 <a target="_blank" index="8" href="http://www.chinamartyrs.gov.cn/LieShiYingMingLu/list4period.html?id=3" bdsfid="42">
+                 <img src="img/bannerguo.jpg" bdsfid="43">
+                 </a>
+                 </li>-->
+				 
+				
+				 
+				 
+				 
+             </ul>
+            <div class="slidebtn" bdsfid="47">
+             <ul bdsfid="48">
+              <li class="focus" bdsfid="49">4</li>
+			  <!-- <li bdsfid="50">3</li>-->
+			 <!-- <li bdsfid="51">2</li> -->
+             <!-- <li class="" bdsfid="52">1</li>-->
+             </ul>
+             </div>
+    </div>
+        </div>
+        <div class="area" bdsfid="53">
+           <!-- <div class="cemetery" bdsfid="54">
+                <div class="cemetery-part" bdsfid="55">
+                    <span bdsfid="56">纪念设施</span><a href="LingYuanZhanShi/lingyuan/index.html" bdsfid="57">更多&gt;&gt;</a>
+                </div>
+                <div class="cemetery-pic" bdsfid="58">
+           
+                    <iframe src="LingYuanZhanShi/list4index01.html" frameborder="0" scrolling="no" width="100%" height="100%" bdsfid="59"></iframe>
+                </div>
+            </div>-->
+             <iframe src="jiniansheshi/shishe.html" frameborder="0" scrolling="no" width="100%" height="1250px" bdsfid="59"></iframe>
+        </div>
+        <div class="area" bdsfid="60">
+            <div class="martyr" bdsfid="61">
+                <div class="martyr-list" style="width:980px;" bdsfid="62">
+                    <iframe src="LieShiYingMingLu/list4index.html" frameborder="0" scrolling="no" width="100%" height="100%" bdsfid="63"></iframe>
+                </div>
+                
+                <!-- 红色影音 -->
+                <!--<div class="red-audio">
+                    <div class="red-audio-part">
+                        <span>红色影音</span><a href="HongSeYingYin/index.html">更多&gt;&gt;</a>
+                    </div>
+                    <iframe src="HongSeYingYin/list4index.html" frameborder="0" scrolling="no" width="100%" height="360px"></iframe>
+                </div>-->
+            </div>
+        </div>
+
+
+        <!-- 历史回顾 -->
+<!-- 
+        <div class="area">
+            <div class="history">
+                <div class="history-part">
+                    历史回顾
+                </div>
+                <div class="history-center">
+                    <iframe src="LiShiHuiGu/lishihuigu_index.html" frameborder="0" scrolling="no" width="100%" height="100%"></iframe>
+                </div>
+            </div>
+        </div>
+-->     
+
+
+
+        <div class="area" bdsfid="64">
+            <div class="deeds-law" bdsfid="65">
+                <div class="hero-deeds" bdsfid="66">
+                    <div class="hero-deeds-part" bdsfid="67">
+                        <span bdsfid="68" style="width: 241px;">英雄事迹</span><a href="YingXiongShiJi/index.html" bdsfid="69">更多&gt;&gt;</a>
+                    </div>
+                    <div class="hero-deeds-main" bdsfid="70">
+                        <iframe src="YingXiongShiJi/home.html" frameborder="0" scrolling="no" width="100%" height="320px" bdsfid="71"></iframe>
+                    </div>
+                </div>
+                <div bdsfid="72">
+                   <iframe src="http://news.chinamartyrs.gov.cn/syzcfg/syzzfg.html" frameborder="0" scrolling="no" width="244px" height="180px" bdsfid="77" style="margin-bottom: 10px;"></iframe>
+                   <iframe src="http://news.chinamartyrs.gov.cn/syllyj/syllyj.html" frameborder="0" scrolling="no" width="244px" height="180px" bdsfid="77"></iframe>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 统计信息 -->
+<!-- 
+        <div class="area">
+            <div class="statistics">
+                <div class="statistics-part">
+                    统计信息
+                </div>
+                <div class="statistics-main">
+                    <a href="TongJiFenXi/index.html#bhdw" style="text-decoration: none;">
+                        <img src="img/lsly.png" />
+                    </a>
+                    <a href="TongJiFenXi/index.html#jnss" style="text-decoration: none;">
+                        <img src="img/lsjnss.png" />
+                    </a>
+                    <a href="TongJiFenXi/index.html#qyfb" style="text-decoration: none;">
+                        <img src="img/lsqy.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+-->
+
+    <div class="area" bdsfid="83">
+            <div class="footer" bdsfid="84">
+                <iframe src="Common/footer.html" frameborder="0" scrolling="no" bdsfid="85"></iframe>
+            </div>
+        </div>
+		<!-- 
+        <div class="suspension">
+        	<div class="suspension1" style="font-family: '微软雅黑'; font-weight: 700;">
+        		<div style="margin-left: 10px;">温馨提示</div>
+        		<div class="close" style="margin-right: 10px; font-size: 30px; cursor: pointer;">×</div>
+        	</div>
+        	<div class="suspension2" style="font-size: 15px;">
+        		“中华英烈网”正在进行网站备案迁移，如在访问中出现未备案提示，请刷新页面重新访问。
+        	</div>
+        </div>
+		-->
+</body>
+</html>
+
